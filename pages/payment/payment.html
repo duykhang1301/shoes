@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store</title>
+    <link rel="icon" href="../../image/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- import bootstrap -->
+   <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    
+</head>
+<body>
+    
+  
+    <!-- header section starts  -->
+    <header class="header">
+
+        <div class="header-1">
+    
+            <a href="../../index.html" class="logo-product"> <i class="fas fa-shoe-prints"></i> .sneaker </a>
+    
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search custom-label"></label>
+            </form>
+    
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="../product-cart/product-cart.html" class="fas fa-shopping-cart"> 
+                    <div class="counter">3</div> 
+                </a>
+                <div id="login-btn" class="fas fa-user">
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="header-2">
+            <nav class="navbar-product">
+                <a href="../../index.html">home</a>
+                <a href="../introduce/introduce.html">introduce</a>
+                <a href="../products/products.html">products</a>
+                <a href="../contact/contact.html ">contact</a>
+            </nav>
+        </div>
+    
+    </header>
+    
+    <!-- header section ends -->
+    
+    <!-- bottom navbar  -->
+    
+    <nav class="bottom-navbar">
+        <a href="../../index.html" class="fas fa-home"></a>
+        <a href="../introduce/introduce.html" class="fas fa-list"></a>
+        <a href="../products/products.html" class="fas fa-tags"></a>
+        <a href="contact.html" class="fas fa-id-card"></a>
+    </nav>
+
+
+
+<!-- login form  -->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+    <form action="" method="post" id="formLogin">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="name" name="username" class="box" placeholder="enter your email" id="username">
+        <div id="notify" style="color: red;"></div>
+        <span>password</span>
+        <input type="password" name="password" class="box" placeholder="enter your password" id="password">
+        <div id="notify-pass" style="color: red;"></div>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <button type="button" class="btn" id="btn-login">Sign in</button>
+        <div class="login-social">
+            <h4>Login with</h4>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google"></i>
+        </div>
+        <!-- <input type="submit" value="sign in" class="btn" id="btn-login"> -->
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#" id="register-btn">create one</a></p> 
+    </form>
+
+</div>
+
+<!-- register form start -->
+
+<div class="register-form-container">
+
+    <div id="close-register-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>Register</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="username-1">
+        <div id="notify-1" style="color: red;"></div>
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="password-1">
+        <div id="notify-pass-1" style="color: red;"></div>
+        <span>confirm password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="password-confirm">
+        <div id="notify-confirm" style="color: red;"></div>
+        <button type="button" class="btn" id="btn-register">Register</button>
+        <div class="login-social">
+            <h4>Login with</h4>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google"></i>
+        </div>
+    </form>
+
+</div>
+<!-- register form end -->
+
+<!-- section main start-->
+
+<div class="container d-flex justify-content-center mt-5 mb-5">
+
+            
+
+    <div class="row g-3">
+
+      <div class="col-md-6">  
+        
+        <span>Payment Method</span>
+        <div class="card">
+
+          <div class="accordion" id="accordionExample">
+            
+            <div class="card">
+              <div class="card-header p-0" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-light btn-block text-left collapsed p-3 rounded-0 border-bottom-custom" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="d-flex align-items-center justify-content-between">
+
+                      <span>Paypal</span>
+                      <img src="https://i.imgur.com/7kQEsHU.png" width="30">
+                      
+                    </div>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <input type="text" class="form-control" placeholder="Paypal email">
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header p-0">
+                <h2 class="mb-0">
+                  <button class="btn btn-light btn-block text-left p-3 rounded-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="d-flex align-items-center justify-content-between">
+
+                      <span>Credit card</span>
+                      <div class="icons">
+                        <img src="https://i.imgur.com/2ISgYja.png" width="30">
+                        <img src="https://i.imgur.com/W1vtnOV.png" width="30">
+                        <img src="https://i.imgur.com/35tC99g.png" width="30">
+                        <img src="https://i.imgur.com/2ISgYja.png" width="30">
+                      </div>
+                      
+                    </div>
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body payment-card-body">
+                  
+                  <span class="font-weight-normal card-text">Card Number</span>
+                  <div class="input">
+
+                    <i class="fa fa-credit-card"></i>
+                    <input type="text" class="form-control" placeholder="0000 0000 0000 0000" id="card-number">
+                    <div id="notify-card" style="color: red;"></div>
+                  </div> 
+
+                  <div class="row mt-3 mb-3">
+
+                    <div class="col-md-6">
+
+                      <span class="font-weight-normal card-text">Expiry Date</span>
+                      <div class="input">
+
+                        <i class="fa fa-calendar"></i>
+                        <input type="text" class="form-control" placeholder="MM/YY" id="expiry">
+                        <div id="notify-expiry" style="color: red;"></div>
+                      </div> 
+                      
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                      <span class="font-weight-normal card-text">CVC/CVV</span>
+                      <div class="input">
+
+                        <i class="fa fa-lock"></i>
+                        <input type="text" class="form-control" placeholder="000" id="cvc">
+                        <div id="notify-cvc" style="color: red;"></div>
+                      </div> 
+                      
+                    </div>
+                    
+
+                  </div>
+
+                  <span class="text-muted certificate-text"><i class="fa fa-lock"></i> Your transaction is secured with ssl certificate</span>
+                 
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+          <span>Summary</span>
+
+          <div class="card">
+
+            <div class="d-flex justify-content-between p-3">
+
+              <div class="d-flex flex-column">
+
+                <span>Billed <i class="fa fa-caret-down"></i></span>
+                <a href="#" class="billing">Save 20% with annual billing</a>
+                
+              </div>
+
+              <div class="mt-1">
+                <sup class="super-price">430.00$</sup>
+              </div>
+              
+            </div>
+
+            <hr class="mt-0 line">
+
+            <div class="p-3">
+
+              <div class="d-flex justify-content-between mb-2">
+
+                <span>Refferal Bonouses</span>
+                <span>-$2.00</span>
+                
+              </div>
+
+              <div class="d-flex justify-content-between">
+
+                <span>Vat <i class="fa fa-clock-o"></i></span>
+                <span>-20%</span>
+                
+              </div>
+              
+
+            </div>
+
+            <hr class="mt-0 line">
+
+
+            <div class="p-3 d-flex justify-content-between">
+
+              <div class="d-flex flex-column">
+
+                <span>Today you pay(US Dollars)</span>
+                
+              </div>
+              <span>$0</span>
+
+              
+
+            </div>
+
+
+            <div class="p-3">
+
+            <button class="btn btn-primary btn-block free-button" id="pay-btn">Pay</button> 
+           <div class="text-center">
+             <a href="#">Have a promo code?</a>
+           </div>
+              
+            </div>
+
+
+
+            
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </div>
+
+<!-- section main end -->
+
+<!-- section footer start -->
+<div class="container pl-5">
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>our locations</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> viet nam </a>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> introduce </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> products </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+            </div>
+    
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i>khangnguyen@gmail.com </a>
+                <img src="../../image/worldmap.png" class="map" alt="">
+            </div>
+            
+        </div>
+    
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+    
+        <!-- <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div> -->
+    
+    </section>
+</div>
+
+<div class="loader-container">
+    <img src="../../image/loader-img.gif" alt="">
+</div>
+
+<!-- section footer end -->
+   <!-- import bootstrap start-->
+   <script src="../../vendor/jquery/jquery-3.6.0.min.js"></script>
+   <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ <!-- import bootstrap end -->
+<script src="../../js/script.js"></script>
+</body>
+</html>

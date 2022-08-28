@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store</title>
+    <link rel="icon" href="../../../image/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- import bootstrap -->
+   <link rel="stylesheet" href="../../../vendor/bootstrap/css/bootstrap.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    
+</head>
+<body>
+    
+  
+    <!-- header section starts  -->
+    <header class="header">
+
+        <div class="header-1">
+    
+            <a href="../../../index.html" class="logo-product"> <i class="fas fa-shoe-prints"></i> .sneaker </a>
+    
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search custom-label"></label>
+            </form>
+    
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="../../product-cart/product-cart.html" class="fas fa-shopping-cart"> 
+                    <div class="counter">3</div> 
+                </a>
+                <div id="login-btn" class="fas fa-user">
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="header-2">
+            <nav class="navbar-product">
+                <a href="../../../index.html">home</a>
+                <a href="../../introduce/introduce.html">introduce</a>
+                <a href="../../products/products.html" class="active">products</a>
+                <a href="../../contact/contact.html "  >contact</a>
+            </nav>
+        </div>
+    
+    </header>
+    
+    <!-- header section ends -->
+    
+    <!-- bottom navbar  -->
+    
+    <nav class="bottom-navbar">
+        <a href="../../../index.html" class="fas fa-home"></a>
+        <a href="../../introduce/introduce.html" class="fas fa-list"></a>
+        <a href="../../products/products.html" class="fas fa-tags"></a>
+        <a href="../../contact/contact.html" class="fas fa-id-card"></a>
+    </nav>
+
+
+
+<!-- login form  -->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+    <form action="" method="post" id="formLogin">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="name" name="username" class="box" placeholder="enter your email" id="username">
+        <div id="notify" style="color: red;"></div>
+        <span>password</span>
+        <input type="password" name="password" class="box" placeholder="enter your password" id="password">
+        <div id="notify-pass" style="color: red;"></div>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <button type="button" class="btn" id="btn-login">Sign in</button>
+        <div class="login-social">
+            <h4>Login with</h4>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google"></i>
+        </div>
+        <!-- <input type="submit" value="sign in" class="btn" id="btn-login"> -->
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#" id="register-btn">create one</a></p> 
+    </form>
+
+</div>
+
+<!-- register form start -->
+
+<div class="register-form-container">
+
+    <div id="close-register-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>Register</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="username-1">
+        <div id="notify-1" style="color: red;"></div>
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="password-1">
+        <div id="notify-pass-1" style="color: red;"></div>
+        <span>confirm password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="password-confirm">
+        <div id="notify-confirm" style="color: red;"></div>
+        <button type="button" class="btn" id="btn-register">Register</button>
+        <div class="login-social">
+            <h4>Login with</h4>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google"></i>
+        </div>
+    </form>
+
+</div>
+<!-- register form end -->
+
+<!-- section main start-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="row">
+                <div class="col-12 ">
+                    <img src="../product-details-img/nike-air-90-SE/90-SE.png" alt="" id="imagebox" class="img-fluid img-custom-detail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-custom">
+                    <img src="../product-details-img/nike-air-90-SE/90-SE-1.png" alt="" class="img-fluid" onclick="functio(this)">
+                </div>
+                <div class="col-3 col-custom">
+                    <img src="../product-details-img/nike-air-90-SE/90-SE-2.png" alt="" class="img-fluid" onclick="functio(this)">
+                </div>
+                <div class="col-3 col-custom">
+                    <img src="../product-details-img/nike-air-90-SE/90-SE-3.png" alt="" class="img-fluid" onclick="functio(this)">
+                </div>
+                <div class="col-3 col-custom">
+                    <img src="../product-details-img/nike-air-90-SE/90-SE-4.png" alt="" class="img-fluid" onclick="functio(this)">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 p-5">
+            <h1 class="name">Nike Air Max 90 SE</h1>
+            <h3>140$</h3>
+            <h4>Select size</h4>
+            <div class="size-container">
+                <div class="size-item">
+                    6
+                </div>
+                <div class="size-item">
+                    6.5
+                </div>
+                <div class="size-item">
+                    7
+                </div>
+                <div class="size-item">
+                    7.5
+                </div>
+                <div class="size-item">
+                    8
+                </div>
+            </div>
+            <div class="size-container">
+                <div class="size-item">
+                    8.5
+                </div>
+                <div class="size-item">
+                    9
+                </div>
+                <div class="size-item">
+                    9.5
+                </div>
+                <div class="size-item">
+                    10
+                </div>
+                <div class="size-item">
+                    10.5
+                </div>
+            </div>
+            <div class="size-container">
+                <div class="size-item">
+                    11
+                </div>
+                <div class="size-item">
+                    11.5
+                </div>
+                <div class="size-item">
+                    12
+                </div>
+                <div class="size-item">
+                    12.5
+                </div>
+                <div class="size-item">
+                    13
+                </div>
+            </div>
+            <div class="size-container">
+                <div class="size-item">
+                    14
+                </div>
+                <div class="size-item">
+                    15
+                </div>
+                <div class="size-item" style="visibility: hidden;">
+                    
+                </div>
+                <div class="size-item" style="visibility: hidden;">
+                    
+                </div>
+                <div class="size-item" style="visibility: hidden;">
+                    
+                </div>
+            </div>
+            <p class="graph-detail">
+                Nothing as fly, nothing as comfortable, nothing as proven. The Nike Air Max 90 stays true to its OG running roots with the iconic Waffle sole, stitched overlays and classic TPU details. Classic colors celebrate your fresh look while Max Air cushioning adds comfort to the journey.
+            </p>
+            <hr />
+            <h2 class="graph-detail-custom"><a href="#">Free Shipping & Returns </a></h2>
+            <hr/>
+            <h2 class="graph-detail-custom"><a href="#">Review (239) </a></h2>
+            <hr />
+            <button type="button" class="btn w-100" id="btn-pay">Add to cart</button>
+            <button type="button" class="btn w-100" id="btn-pay">Pay</button>
+        </div>
+    </div>
+</div>
+<script>
+        function functio(small){
+                var full = document.getElementById("imagebox")
+                full.src = small.src
+            }
+</script>
+<!-- section main end -->
+
+<!-- section footer start -->
+<div class="container pl-5">
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>our locations</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> viet nam </a>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> introduce </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> products </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+            </div>
+    
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i>khangnguyen@gmail.com </a>
+                <img src="../../../image/worldmap.png" class="map" alt="">
+            </div>
+            
+        </div>
+    
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+    
+        <!-- <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div> -->
+    
+    </section>
+</div>
+
+<div class="loader-container">
+    <img src="../../../image/loader-img.gif" alt="">
+</div>
+
+<!-- section footer end -->
+   <!-- import bootstrap start-->
+   <script src="../../../vendor/jquery/jquery-3.6.0.min.js"></script>
+   <script src="../../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ <!-- import bootstrap end -->
+<script src="../../../js/script.js"></script>
+</body>
+</html>
